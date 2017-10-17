@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>To Do List</title>
+	<title>Mandalay SF</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-<h1>Get Stuff Done!</h1>
+<div class="container text-center">
+<img src="img/logo.png" class="mx-auto mt-5">
 
-<form>
-	<input id="input" placeholder="What do you have to do today?">
-	<button type="button" onclick="myFunction()">ADD TO LIST</button>
+<form class="mt-5">
+	<button type="button" onclick="showMain()" class="btn">Main Course</button>
+	<button type="button" onclick="showApps()" class="btn">Appitizer</button>
+	<button type="button" onclick="showVeg()" class="btn">Vegetarian</button>
+	<button type="button" onclick="showGf()" class="btn">Gluten Free</button>
 </form>
-<ol id="list"></ol>
+</div>
+
+<div id="menu" class="container mx-auto text-center my-5"></div>
 
 <script type="text/javascript" src="js/main.js"></script>
 </body>
