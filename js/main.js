@@ -48,6 +48,7 @@ var menuItem = [
 ]
 
 function showMain() {
+	document.getElementById('menu').innerHTML = '';
 	for (i=0; i<menuItem.length; i++) {
 		if(menuItem[i].main == "main"){	
 			var dish = menuItem[i].dish
@@ -68,6 +69,7 @@ function showMain() {
 }
 
 function showVeg() {
+	document.getElementById('menu').innerHTML = '';
  	for (i=0; i<menuItem.length; i++) {
 		if(menuItem[i].veg == "veg"){	
 			var dish = menuItem[i].dish
