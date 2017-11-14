@@ -47,6 +47,23 @@ var menuItem = [
 	}
 ]
 
+function showFull() {
+	document.getElementById('menu').innerHTML = '';
+	for (i=0; i<menuItem.length; i++) {
+			var dish = menuItem[i].dish
+			var description = menuItem[i].description	
+			var dishText = document.createTextNode(dish)
+			var descriptionText = document.createTextNode(description)
+			var h3 = document.createElement("h3")
+			var p = document.createElement("p")
+			h3.appendChild(dishText)
+			p.appendChild(descriptionText)
+			document.getElementById("menu").appendChild(h3)
+			document.getElementById("menu").appendChild(p)			
+	}
+}
+
+
 function showMain() {
 	document.getElementById('menu').innerHTML = '';
 	for (i=0; i<menuItem.length; i++) {
@@ -55,15 +72,12 @@ function showMain() {
 			var description = menuItem[i].description	
 			var dishText = document.createTextNode(dish)
 			var descriptionText = document.createTextNode(description)
-			var mainDiv = document.createElement("div")
-			mainDiv.className = "mainDiv"
 			var h3 = document.createElement("h3")
 			var p = document.createElement("p")
 			h3.appendChild(dishText)
 			p.appendChild(descriptionText)
 			document.getElementById("menu").appendChild(h3)
-			document.getElementById("menu").appendChild(p)	
-			document.getElementById("menu").appendChild(mainDiv)			
+			document.getElementById("menu").appendChild(p)			
 		}
 	}
 }
@@ -76,22 +90,52 @@ function showVeg() {
 			var description = menuItem[i].description	
 			var dishText = document.createTextNode(dish)
 			var descriptionText = document.createTextNode(description)
-			var vegDiv = document.createElement("div")
 			var h3 = document.createElement("h3")
 			var p = document.createElement("p")
 			h3.appendChild(dishText)
 			p.appendChild(descriptionText)
 			document.getElementById("menu").appendChild(h3)
 			document.getElementById("menu").appendChild(p)
-			document.getElementById("menu").appendChild(vegDiv)	
+		}
+	}
+}
+
+function showApps() {
+	document.getElementById('menu').innerHTML = '';
+ 	for (i=0; i<menuItem.length; i++) {
+		if(menuItem[i].app == "app"){	
+			var dish = menuItem[i].dish
+			var description = menuItem[i].description	
+			var dishText = document.createTextNode(dish)
+			var descriptionText = document.createTextNode(description)
+			var h3 = document.createElement("h3")
+			var p = document.createElement("p")
+			h3.appendChild(dishText)
+			p.appendChild(descriptionText)
+			document.getElementById("menu").appendChild(h3)
+			document.getElementById("menu").appendChild(p)
 		}
 	}
 }
 
 
-
-
-
+function showGf() {
+	document.getElementById('menu').innerHTML = '';
+ 	for (i=0; i<menuItem.length; i++) {
+		if(menuItem[i].gf == "gf"){	
+			var dish = menuItem[i].dish
+			var description = menuItem[i].description	
+			var dishText = document.createTextNode(dish)
+			var descriptionText = document.createTextNode(description)
+			var h3 = document.createElement("h3")
+			var p = document.createElement("p")
+			h3.appendChild(dishText)
+			p.appendChild(descriptionText)
+			document.getElementById("menu").appendChild(h3)
+			document.getElementById("menu").appendChild(p)
+		}
+	}
+}
 
 
 

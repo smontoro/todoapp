@@ -5,3 +5,8 @@ body {
 ul {
 	list-style: none;
 }
+
+img {
+	width: 500px;
+	text-align: center;
+}
