@@ -47,6 +47,10 @@ var menuItem = [
 	}
 ]
 
+
+
+
+
 function showFull() {
 	document.getElementById('menu').innerHTML = '';
 	for (i=0; i<menuItem.length; i++) {

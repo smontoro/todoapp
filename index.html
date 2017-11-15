@@ -7,22 +7,36 @@
 </head>
 <body onload="showFull()">
 
-<div class="container text-center">
-<img src="img/logo.png" class="mx-auto mt-5">
 
-<form class="mt-5">
-	<button type="button" onclick="showFull()" class="btn">Full Menu</button>
-	<button type="button" onclick="showMain()" class="btn">Main Courses</button>
-	<button type="button" onclick="showApps()" class="btn">Appetizers</button>
-	<button type="button" onclick="showVeg()" class="btn">Vegetarian</button>
-	<button type="button" onclick="showGf()" class="btn">Gluten Free</button>
-</form>
-</div>
-
-<div id="menu" class="container mx-auto text-center my-5"></div>
+		<header class="container-fluid">
+			<img src="img/logo.png" class="logo mx-auto mt-5">
+		</header>
 
 
 
-<script type="text/javascript" src="js/main.js"></script>
+		<div class="text-center container-fluid main">
+			<div class="btn-group">
+			<button type="button" onclick="showFull()" class="btn btn-outline-dark">Full Menu</button>
+			<button type="button" onclick="showMain()" class="btn btn-outline-dark">Main Courses</button>
+			<button type="button" onclick="showApps()" class="btn btn-outline-dark">Appetizers</button>
+			<button type="button" onclick="showVeg()" class="btn btn-outline-dark">Vegetarian</button>
+			<button type="button" onclick="showGf()" class="btn btn-outline-dark">Gluten Free</button>
+		</div>
+		</div>
+
+
+		<div id="menu" class="container mx-auto text-center my-5"></div>
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
