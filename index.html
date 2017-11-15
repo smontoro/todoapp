@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Mandalay SF</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Mandalay SF</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
 </head>
+
 <body onload="showFull()">
 
 
-		<header class="container-fluid">
-			<img src="img/logo.png" class="logo mx-auto mt-5">
-		</header>
+    <header class="container-fluid">
+        <img src="img/logo.png" class="logo mx-auto mt-5">
+    </header>
 
 
 
-		<div class="text-center container-fluid main">
-			<div class="btn-group">
-			<button type="button" onclick="showFull()" class="btn btn-outline-dark">Full Menu</button>
-			<button type="button" onclick="showMain()" class="btn btn-outline-dark">Main Courses</button>
-			<button type="button" onclick="showApps()" class="btn btn-outline-dark">Appetizers</button>
-			<button type="button" onclick="showVeg()" class="btn btn-outline-dark">Vegetarian</button>
-			<button type="button" onclick="showGf()" class="btn btn-outline-dark">Gluten Free</button>
-		</div>
-		</div>
+    <div class="text-center container-fluid main">
+        <div class="btn-group">
+            <button type="button" onclick="showFull()" class="btn btn-outline-dark">Full Menu</button>
+            <button type="button" onclick="showMain()" class="btn btn-outline-dark">Main Courses</button>
+            <button type="button" onclick="showApps()" class="btn btn-outline-dark">Appetizers</button>
+            <button type="button" onclick="showVeg()" class="btn btn-outline-dark">Vegetarian</button>
+            <button type="button" onclick="showGf()" class="btn btn-outline-dark">Gluten Free</button>
+        </div>
+    </div>
 
 
-		<div id="menu" class="container mx-auto text-center my-5"></div>
-
-
-
-
+    <div id="menu" class="container mx-auto text-center my-5"></div>
 
 
 
 
 
+    <footer class="text-center text-white pt-5">
+        <div class="row">
+            <div class="col-4">
+                <p>ADDRESS:</p>
+
+                <p>Inner Richmond
+                    <br> 4348, California St
+                    <br> San Francisco, CA — 94118
+                    <br> (415) 386-3895, (415) 386-3896</p>
+            </div>
+
+            <div class="col-4">
+                <p>WEEKDAY HOURS:</p>
+
+                <p>Closed on every Tuesday
+                    <br> Monday — Thursday
+                    <br> 11:30 am - 2:30 pm, 5:00 pm - 9:30 pm
+                    <br> Friday
+                    <br> 11:30 am - 2:30 pm, 5:00 pm - 10:00 pm</p>
+            </div>
+
+            <div class="col-4">
+                <p>WEEKEND HOURS:</p>
+                <p>Saturday — Sunday
+                    <br> 11:30 am - 10:00 pm
+                    <br> Make a reservation </p>
+            </div>
+        </div>
+    </footer>
 
 
-	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
